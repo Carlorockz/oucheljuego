@@ -428,6 +428,32 @@
                     fixedContentPos: false
                 });
             });
+            $(document).ready(function () {
+                                                        $("#enviar_formulario").on("click", function () {
+                                                            $.ajax({
+                                                                url: 'https://api.safeware.cl/delivery_email/send_mail',
+                                                                type: 'post',
+                                                                headers: {
+                                                                    'Authorization': 'Token 9a28e1d63a5cf67ebe88fe8ffa810c37c0001e04',
+                                                                },
+                                                                data: {
+                                                                    "destino": "comunicaciones@oucheljuego.cl",
+                                                                    "origen": "comunicaciones@oucheljuego.cl",
+                                                                    "mensaje": $("#comentarios").val(),
+                                                                    "asunto": "Nuevo Mensaje desde Sitio Web: " + $("#nombre").val(),
+                                                                    "sitio_web_origen": "oucheljuego.cl",
+                                                                    "reply_to": $("#email").val()
+                                                                },
+                                                                success: function (response) {
+                                                                    $("#email").val("")
+                                                                    $("#comentarios").val("")
+                                                                    $("#nombre").val("")
+                                                                    swal("¡Enviado!", "¡Mensaje enviado con éxito!", "success");
+                                                                }
+                                                            });
+                                                        })
+
+                                                    });
         </script>
     </body>
 </html>
