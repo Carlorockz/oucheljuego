@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ouch! - El juego del dolor</title>
+        <link rel="icon" href="assets/logo.svg" sizes="any" type="image/svg+xml">
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <!--swipwe-->
+        <link rel='stylesheet' href="css/swiper.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-764PRP4Y03"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-764PRP4Y03');
+        </script>
+    </head>
+    <body id="home" style="font-family: 'Rubik', sans-serif;">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#home"><img src="assets/logo.png"> </a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#descarga">OBTÉN TU MAZO</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#juego">EL JUEGO</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#material">MATERIAL ADICIONAL</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#contacto">CONTACTO</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="https://www.instagram.com/oucheljuego/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-5">
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="141" viewBox="0 0 250 141">
+                              <image id="Capa_1" data-name="Capa 1" x="5" y="0" width="186" height="125" xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                            <br><br>
+                            <h1 class="fs-1 lh-1 mb-3 font-alt" style="font-family: 'Rubik', sans-serif;">Ouch! el juego que te hará doler, pero de la risa</h1>
+                            <strong style="font-family: 'Rubik', sans-serif; font-size: 1.5rem;">¡Gana el juego y conviértete en especialista en detectar el dolor!</strong>
+                            <br>
+                            <br>
+                            <p class="lead fw-normal text-muted mb-3 lh-1">Ayuda a Calorín, Fredi, Michel y a la señora Dolores en su misión de avisar a Ariel sobre los peligros de sus vaciones.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="px-5 px-sm-0 animate__animated animate__wobble"><img class="img-fluid img-hover" src="assets/Cards_Final2.png" alt="..."/></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="bg-light" id="descarga">
+            <div class="container px-5 text-center">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-xl-8">
+                        <h3 class="font-alt" style="font-family: 'Rubik', sans-serif;">¿Crees que tienes resistencia al dolor? ¡Ponte a prueba junto a tus amigos y juega Ouch! ¡Atrévete!</h3>
+                        <p class="lead fw-normal text-muted">Puedes solicitar tus cartas físicas o descargar la versión imprimible y coloreable del juego en los botones a continuación.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-0 mb-5 mb-lg-0">
+                        <div class="container-fluid px-5">
+                            <div class="row">
+                                <div class="col-md-4 mb-5 offset-md-2">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.3438 19.9372C25.2791 19.9372 26.1762 19.6245 26.8376 19.0677C27.499 18.511 27.8705 17.7559 27.8705 16.9686C27.8705 16.1813 27.499 15.4262 26.8376 14.8695C26.1762 14.3128 25.2791 14 24.3438 14C23.4084 14 22.5113 14.3128 21.8499 14.8695C21.1885 15.4262 20.817 16.1813 20.817 16.9686C20.817 17.7559 21.1885 18.511 21.8499 19.0677C22.5113 19.6245 23.4084 19.9372 24.3438 19.9372ZM19.0536 17.3397C19.0536 17.6808 18.9738 18.0186 18.8187 18.3337C18.6636 18.6489 18.4363 18.9352 18.1497 19.1764C17.8632 19.4176 17.523 19.609 17.1486 19.7395C16.7742 19.87 16.3729 19.9372 15.9676 19.9372C15.5624 19.9372 15.1611 19.87 14.7867 19.7395C14.4123 19.609 14.0721 19.4176 13.7855 19.1764C13.499 18.9352 13.2717 18.6489 13.1166 18.3337C12.9615 18.0186 12.8817 17.6808 12.8817 17.3397C12.8817 16.6508 13.2068 15.9901 13.7855 15.503C14.3643 15.0158 15.1492 14.7422 15.9676 14.7422C16.7861 14.7422 17.571 15.0158 18.1497 15.503C18.7284 15.9901 19.0536 16.6508 19.0536 17.3397ZM35.8058 17.3397C35.8058 17.6808 35.726 18.0186 35.5709 18.3337C35.4158 18.6489 35.1885 18.9352 34.902 19.1764C34.6154 19.4176 34.2752 19.609 33.9008 19.7395C33.5264 19.87 33.1251 19.9372 32.7199 19.9372C32.3146 19.9372 31.9133 19.87 31.5389 19.7395C31.1645 19.609 30.8243 19.4176 30.5378 19.1764C30.2512 18.9352 30.0239 18.6489 29.8688 18.3337C29.7137 18.0186 29.6339 17.6808 29.6339 17.3397C29.6339 16.6508 29.9591 15.9901 30.5378 15.503C31.1165 15.0158 31.9014 14.7422 32.7199 14.7422C33.5383 14.7422 34.3232 15.0158 34.902 15.503C35.4807 15.9901 35.8058 16.6508 35.8058 17.3397ZM18.5043 21.4215C18.0026 21.9476 17.7297 22.6023 17.731 23.2769V28.843C17.731 29.7596 17.9938 30.6242 18.4602 31.3864C17.7882 31.6838 17.0364 31.8301 16.2775 31.8111C15.5187 31.7921 14.7785 31.6085 14.1287 31.278C13.4789 30.9476 12.9415 30.4814 12.5686 29.9248C12.1956 29.3682 11.9998 28.7399 12 28.1009V23.2769C12 22.7848 12.2322 22.3129 12.6456 21.9649C13.059 21.617 13.6196 21.4215 14.2042 21.4215H18.5043ZM30.2273 31.3864C30.708 30.5997 30.958 29.7277 30.9565 28.843V23.2769C30.9565 22.5748 30.6673 21.9299 30.1832 21.4215H34.4833C35.0679 21.4215 35.6285 21.617 36.0419 21.9649C36.4553 22.3129 36.6875 22.7848 36.6875 23.2769V28.1009C36.6877 28.7399 36.4919 29.3682 36.1189 29.9248C35.746 30.4814 35.2086 30.9476 34.5588 31.278C33.909 31.6085 33.1688 31.7921 32.41 31.8111C31.6511 31.8301 30.8993 31.6838 30.2273 31.3864ZM21.2578 21.4215C20.6732 21.4215 20.1126 21.617 19.6992 21.9649C19.2858 22.3129 19.0536 22.7848 19.0536 23.2769V28.843C19.0536 30.024 19.6109 31.1566 20.603 31.9917C21.5951 32.8268 22.9407 33.2959 24.3438 33.2959C25.7468 33.2959 27.0924 32.8268 28.0845 31.9917C29.0766 31.1566 29.6339 30.024 29.6339 28.843V23.2769C29.6339 22.7848 29.4017 22.3129 28.9883 21.9649C28.5749 21.617 28.0143 21.4215 27.4297 21.4215H21.2578Z" fill="#3B487F"/><circle cx="24.2273" cy="23.9394" r="22.9394" stroke="#3B487F" stroke-width="2"/></svg>
+
+                                        <h3 class="font-alt">2 - 4</h3>
+                                        <p class="text-muted mb-0">JUGADORES</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-5">
+                                    <!-- Feature item-->
+                                    <div class="text-center">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="23.9394" cy="23.9395" r="22.9394" stroke="#3B487F" stroke-width="2"/><path d="M21.2988 9C21.1449 9 20.9974 9.0574 20.8885 9.15958C20.7797 9.26176 20.7186 9.40034 20.7186 9.54484V10.6345C20.7186 10.779 20.7797 10.9176 20.8885 11.0198C20.9974 11.1219 21.1449 11.1793 21.2988 11.1793H22.1691V12.6218C15.8924 13.3001 11 18.3191 11 24.3916C11 30.925 16.662 36.2418 23.6197 36.2418C30.5773 36.2418 36.2394 30.925 36.2394 24.3916C36.2414 22.1554 35.5652 19.9649 34.2898 18.0764L35.5193 17.1417L36.067 17.777C36.115 17.8327 36.1741 17.8789 36.241 17.9131C36.308 17.9472 36.3814 17.9687 36.4572 17.9762C36.533 17.9837 36.6096 17.9771 36.6827 17.9568C36.7558 17.9366 36.8239 17.9029 36.8831 17.8579L37.7853 17.172C37.9048 17.081 37.9809 16.9492 37.9969 16.8055C38.0128 16.6619 37.9674 16.5182 37.8706 16.4059L34.9498 13.0182C34.9019 12.9625 34.8428 12.9163 34.7758 12.8821C34.7089 12.848 34.6354 12.8265 34.5596 12.819C34.4839 12.8115 34.4072 12.818 34.3342 12.8383C34.2611 12.8586 34.193 12.8922 34.1338 12.9373L33.2315 13.6232C33.1121 13.7142 33.036 13.846 33.02 13.9896C33.004 14.1333 33.0494 14.277 33.1462 14.3892L33.6942 15.0245L32.47 15.9546C30.5155 14.1462 27.9374 12.9323 25.0702 12.6223V11.1793H25.9405C26.0944 11.1793 26.242 11.1219 26.3508 11.0198C26.4596 10.9176 26.5208 10.779 26.5208 10.6345V9.54484C26.5208 9.40034 26.4596 9.26176 26.3508 9.15958C26.242 9.0574 26.0944 9 25.9405 9H21.2988ZM23.6197 14.4484C29.4799 14.4484 34.2086 18.8888 34.2086 24.3916C34.2086 29.8944 29.4799 34.3348 23.6197 34.3348C17.7595 34.3348 13.0308 29.8944 13.0308 24.3916C13.0308 18.8888 17.7595 14.4484 23.6197 14.4484ZM23.6203 16.476L23.6197 24.3916L30.36 29.1445C31.3003 27.9687 31.8731 26.5703 32.0145 25.106C32.1558 23.6416 31.86 22.1693 31.1602 20.854C30.4604 19.5387 29.3843 18.4325 28.0525 17.6592C26.7208 16.886 25.186 16.4764 23.6203 16.4762V16.476Z" fill="#3B487F"/></svg>
+                                        <h3 class="font-alt">20 MIN</h3>
+                                        <p class="text-muted mb-0">APROX.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-5 mb-md-0">
+                                    <div class="text-center">
+                                        <a class="btn btn-primary py-3 px-4" href="#contacto">SOLICÍTALO AQUÍ 
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M18.4062 23.25H3.875L3.87209 8.62769L14.9488 16.2963C15.1108 16.4084 15.303 16.4684 15.5 16.4684C15.697 16.4684 15.8892 16.4084 16.0512 16.2963L27.125 8.63156V17.4375H29.0625V7.75C29.0617 7.23638 28.8574 6.74401 28.4942 6.38083C28.131 6.01764 27.6386 5.81327 27.125 5.8125H3.875C3.3613 5.81301 2.86879 6.01731 2.50555 6.38055C2.14231 6.74379 1.93801 7.2363 1.9375 7.75V23.25C1.93827 23.7636 2.14264 24.256 2.50583 24.6192C2.86901 24.9824 3.36138 25.1867 3.875 25.1875H18.4062V23.25ZM24.9928 7.75L15.5 14.322L6.00722 7.75H24.9928Z" fill="white"/><path d="M25.1875 27.125C27.3276 27.125 29.0625 25.3901 29.0625 23.25C29.0625 21.1099 27.3276 19.375 25.1875 19.375C23.0474 19.375 21.3125 21.1099 21.3125 23.25C21.3125 25.3901 23.0474 27.125 25.1875 27.125Z" fill="white"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-12 mb-5 mb-md-0">
+                                    <div class="text-center">
+                                        <a class="btn btn-primary py-3 px-4" href="assets/Imprimible.pdf" target="_blank" download>DESCÁRGALO AQUÍ  
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M29.0625 24.2188L27.6927 22.8489L25.1875 25.3541V17.4375H23.25V25.3541L20.7448 22.8489L19.375 24.2188L24.2188 29.0625L29.0625 24.2188Z" fill="white"/><path d="M17.4375 27.125H7.75V3.87502H15.5V9.68752C15.5015 10.2009 15.7062 10.6928 16.0692 11.0559C16.4322 11.4189 16.9241 11.6235 17.4375 11.625H23.25V14.5313H25.1875V9.68752C25.1909 9.56021 25.1667 9.43366 25.1165 9.3166C25.0664 9.19953 24.9914 9.09473 24.8969 9.0094L18.1156 2.22815C18.0303 2.13355 17.9255 2.05857 17.8085 2.0084C17.6914 1.95822 17.5648 1.93404 17.4375 1.93752H7.75C7.23661 1.93906 6.74469 2.14368 6.38167 2.5067C6.01865 2.86972 5.81403 3.36164 5.8125 3.87502V27.125C5.81403 27.6384 6.01865 28.1303 6.38167 28.4934C6.74469 28.8564 7.23661 29.061 7.75 29.0625H17.4375V27.125ZM17.4375 4.26252L22.8625 9.68752H17.4375V4.26252Z" fill="white"/></svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="features-device-mockup">
+                            <img class="img-fluid" src="assets/Mockup.png" alt="..."/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="text-center bg-gradient-primary-to-secondary" id="juego">
+            <div class="container px-5 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-12">
+                        <div class="video2 fix">
+                          <img class="img-hover img-fluid" src="assets/Portada_Video.jpg" alt="" />
+                          <a href="https://vimeo.com/720013841" class="btn-player popup-vimeo"> <img src="assets/Player_Video.svg" alt="" /> </a>
+                        </div>
+                        <br><br>
+                        <div class="text-center">
+                            <a class="btn btn-send py-3 px-4" href="assets/videos/Ouch_animacion.mp4" download>DESCARGA EL VIDEO AQUÍ  
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M29.0625 24.2188L27.6927 22.8489L25.1875 25.3541V17.4375H23.25V25.3541L20.7448 22.8489L19.375 24.2188L24.2188 29.0625L29.0625 24.2188Z" fill="white"/><path d="M17.4375 27.125H7.75V3.87502H15.5V9.68752C15.5015 10.2009 15.7062 10.6928 16.0692 11.0559C16.4322 11.4189 16.9241 11.6235 17.4375 11.625H23.25V14.5313H25.1875V9.68752C25.1909 9.56021 25.1667 9.43366 25.1165 9.3166C25.0664 9.19953 24.9914 9.09473 24.8969 9.0094L18.1156 2.22815C18.0303 2.13355 17.9255 2.05857 17.8085 2.0084C17.6914 1.95822 17.5648 1.93404 17.4375 1.93752H7.75C7.23661 1.93906 6.74469 2.14368 6.38167 2.5067C6.01865 2.86972 5.81403 3.36164 5.8125 3.87502V27.125C5.81403 27.6384 6.01865 28.1303 6.38167 28.4934C6.74469 28.8564 7.23661 29.061 7.75 29.0625H17.4375V27.125ZM17.4375 4.26252L22.8625 9.68752H17.4375V4.26252Z" fill="white"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="about-ouch-section" id="material">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-12 text-center">
+                    <h3 class="font-alt" style="font-family: 'Rubik', sans-serif;">Conoce más acerca de Ouch!</h3>
+                    <p class="lead fw-normal text-muted mb-5 px-5">Si eres docente y quieres enseñar sobre el sistema nervioso y el dolor,
+                    o quieres saber más sobre la materia que sustenta OUCH! El juego del dolor,
+                    revisa este material informativo adicional para complementarlo con el juego.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="blog-slider">
+                  <div class="blog-slider__wrp swiper-wrapper">
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        
+                        <img src="assets/1_Mesa de trabajo 1.png" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <div class="blog-slider__title">
+                            <div class="mt-4 title-slider d-flex align-items-center bg-blue px-3 py-3">
+                                <h3 class="mb-0 px-3" style="color:white; font-size:18px; white-space: initial !important;font-family: 'Rubik', sans-serif;">¿QUÉ ES EL DOLOR?</h3>
+                            </div>
+                        </div>
+                        <div class="blog-slider__text">
+                            <p class="p-slider">
+                                El dolor es una sensación desagradable, tanto física como emocional- la cual nos avisa que algo está ocurriendo y a su vez nos protege.
+                            </p>       
+                            <p class="p-slider">
+                                Hay distintas formas de sentir dolor.</p>
+                            <p class="p-slider">
+                                Por ejemplo, cuando la temperatura es muy alta ya no sentimos sensación de calor y experimentamos dolor quemante. O cuando hacemos una competencia de quien puede tener hielos en las manos por más rato, sentimos frio doloroso Asimismo, cuando nos clavamos una espina en los pies o las manos, estamos ante un dolor mecánico fuerte.</p>
+                            <p class="p-slider">
+                                Las sensaciones de calor. frío o mecánicas, llevadas al extremo. nos hacen sentir dolor y nos pueden provocar daño.</p> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        <img src="assets/1-05.png" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <div class="blog-slider__title">
+                            <div class="mt-4 title-slider d-flex align-items-center bg-blue px-3 py-3">
+                                <h3 class="mb-0 px-3" style="color:white; font-size:18px; white-space: initial !important; font-family: 'Rubik', sans-serif;">¿ES BUENO SENTIR DOLOR?</h3>
+                            </div>
+                        </div>
+                        <div class="blog-slider__text">
+                            <p class="p-slider">
+                                Aunque no lo parezca, es bueno sentir dolor. Esta es la forma que tiene el cuerpo de avisarnos de la presencia de un peligro potencial o real. Piensa en la alarma de una casa, de esa forma el cuerpo nos da a entender que debemos hacer algo.
+                            </p>
+                            <p class="p-slider">
+                                Obviamente no es entretenido sentir dolor pero nos ayuda a escapar de las distintas cosas que no hacen daño.
+                            </p>
+                            <p class="p-slider">
+                                Sin embargo, cuando el dolor dura mucho tiempo, se transforma en un problema de salud. En ese caso es importante ver a un doctor.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        <img src="assets/1-03.png" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <div class="blog-slider__title">
+                          <div class="mt-4 title-slider d-flex align-items-center bg-blue px-3 py-3">
+                                <h3 class="mb-0 px-3" style="color:white; font-size:18px; white-space: initial !important; font-family: 'Rubik', sans-serif;">RECEPTORES SOMATOSENSORIALES Y NOCICEPTORES</h3>
+                            </div>
+                        </div>
+                        <div class="blog-slider__text">
+                            <p class="p-slider">
+                                Los nociceptores son receptores de neuronas sensoriales que responden a estímulos que podrían ocasionar un daño a nuestro organismo.
+                            </p>
+                            <p class="p-slider">
+                                Los estímulos dolorosos son detectados, transducidos y transmitidos hacia nuestro cerebro por las neuronas nociceptivas en un proceso llamado nocicepción.
+                            </p>
+                            <p class="p-slider">
+                                Los nociceptores detectan varios tipos de estímulos mecánicos o térmicos (calor o frío) solo cuando el estímulo es muy fuerte y es capaz de producir daño.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        <img src="assets/1-02.png">
+                      </div>
+                      <div class="blog-slider__content">
+                        <div class="blog-slider__title">
+                            <div class="mt-4 title-slider d-flex align-items-center bg-blue px-3 py-3">
+                                <h3 class="mb-0 px-3" style="color:white; font-size:18px; white-space: initial !important; font-family: 'Rubik', sans-serif;">EL CIRCUITO DE LA NOCICEPCIÓN</h3>
+                            </div>
+                        </div>
+                        <div class="blog-slider__text">
+                            <p class="p-slider">
+                                El circuito de la nocicepción es la manera en la que el cuerpo responde a los estímulos externos que pueden causar dolor. Este se compone por diferentes partes por donde van pasando los estímulos para ser procesados. Si imaginamos al cuerpo humano como un edificio, este tendría varias puertas de entrada, que serían los nociceptores, que son los receptores de dolor que se encargan de transducir, es decir, de transformar los estímulos en un potencial de acción: la onda eléctrica que viaja por el sistema nervioso. Una vez que un estímulo entró al cuerpo por alguna de sus puertas y se transformó en un potencial, el Nervio periférico y ganglio de la raíz dorsal, que serían nuestros porteros del edificio del cuerpo, ubicados en el axón y soma de las neuronas sensoriales, se encargarán de guiar este estímulo hasta la médula espinal, donde se encuentra con una recepcionista de la médula: la neurona Interneuronal.
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="blog-slider__item swiper-slide">
+                      <div class="blog-slider__img">
+                        <img src="assets/1-04.png" alt="">
+                      </div>
+                      <div class="blog-slider__content">
+                        <div class="blog-slider__title">
+                            <div class="mt-4 title-slider d-flex align-items-center bg-blue px-3 py-3">
+                                <h3 class="mb-0 px-3" style="color:white; font-size:18px; white-space: initial !important; font-family: 'Rubik', sans-serif;">HISTORIA DEL JUEGO</h3>
+                            </div>
+                        </div>
+                        <div class="blog-slider__text">
+                            <p class="p-slider">
+                                A Ariel le encanta ir a la playa. Quiere volver este verano y ya está pensando qué cosas podrá hacer allá. Se imagina tomando un helado fresquito de menta chips, su sabor favorito, o comiéndose un churro relleno en el carro de la plaza. Casi puede sentir el sabor del manjar esparcido sobre la masa crujiente ¡Pero alto! Debe soplarlos antes de comerlos porque recién hechos vienen demasiado calientes.
+                            </p>
+                            <p class="p-slider">
+                                Ahora se ve caminando por la arena, casi puede sentir las cosquillas que los granitos le hacen en los pies, se siente tan agradable, hasta que de repente, un pinchazo. Una conchita en el camino ha decidido punzarle justo al medio de su dedo gordo. Se la quita y sigue caminando, pero de repente nota que le empiezan a doler mucho las plantas de los pies ¡Se las está quemando! No puede olvidarse de llevar sus chalas. Mientras escribe una lista de todos los artículos...
+                            </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="blog-slider__pagination"></div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="text-center">
+                    <a class="btn btn-secondary py-3 px-4" href="assets/docentes_ouch.pdf" target="_blank" download>DESCARGA EL MATERIAL ADICIONAL
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M29.0625 24.2188L27.6927 22.8489L25.1875 25.3541V17.4375H23.25V25.3541L20.7448 22.8489L19.375 24.2188L24.2188 29.0625L29.0625 24.2188Z" fill="white"/><path d="M17.4375 27.125H7.75V3.87502H15.5V9.68752C15.5015 10.2009 15.7062 10.6928 16.0692 11.0559C16.4322 11.4189 16.9241 11.6235 17.4375 11.625H23.25V14.5313H25.1875V9.68752C25.1909 9.56021 25.1667 9.43366 25.1165 9.3166C25.0664 9.19953 24.9914 9.09473 24.8969 9.0094L18.1156 2.22815C18.0303 2.13355 17.9255 2.05857 17.8085 2.0084C17.6914 1.95822 17.5648 1.93404 17.4375 1.93752H7.75C7.23661 1.93906 6.74469 2.14368 6.38167 2.5067C6.01865 2.86972 5.81403 3.36164 5.8125 3.87502V27.125C5.81403 27.6384 6.01865 28.1303 6.38167 28.4934C6.74469 28.8564 7.23661 29.061 7.75 29.0625H17.4375V27.125ZM17.4375 4.26252L22.8625 9.68752H17.4375V4.26252Z" fill="white"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="font-alt fs-2">Acerca de Minus Pain</h2>
+                        <p class="lead fw-normal text-muted" style="font-size: 1.1rem;">Minus es un núcleo científico creado para el desarrollo de investigación en neurociencia translacional del dolor y para la formación de capital humano avanzado en el área científica y clínica.</p>
+                        <p class="lead fw-normal text-muted" style="font-size: 1.1rem;">El núcleo asocia a cinco grupos de investigación, cuyas competencias abarcan desde la investigación biomédica de vanguardia hasta los estudios clínicos cuyas colaboraciones se reflejan en proyectos, publicaciones, conferencias internacionales y supervisión de tesis conjuntos.</p>
+                        <p class="lead fw-normal text-muted" style="font-size: 1.1rem;">Su trabajo tiene una aproximación traslacional <b>bedside to bench and back</b>, un concepto que ilustra el camino por el cual avanzan colaborativamente nuestras líneas de investigación, que van desde la ciencia biomédica, hasta los pacientes. Estamos enfocados en determinar los blancos moleculares claves implicados en el dolor neuropático. En particular, nos centraremos en el estudio de los mecanismos celulares y moleculares en modelos preclínicos y clínicos.</p>
+
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="video2 fix">
+                          <img class="img-hover img-fluid" src="assets/Video_corp.png" alt="" />
+                          <a href="https://vimeo.com/718824999" class="btn-player popup-vimeo"> <img src="assets/Player_Video.svg" alt="" /> </a>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <a class="btn btn-primary py-3 px-4" href="assets/videos/OUCH_VF.mp4" download>DESCARGA EL VIDEO AQUÍ
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none"><path d="M29.0625 24.2188L27.6927 22.8489L25.1875 25.3541V17.4375H23.25V25.3541L20.7448 22.8489L19.375 24.2188L24.2188 29.0625L29.0625 24.2188Z" fill="white"/><path d="M17.4375 27.125H7.75V3.87502H15.5V9.68752C15.5015 10.2009 15.7062 10.6928 16.0692 11.0559C16.4322 11.4189 16.9241 11.6235 17.4375 11.625H23.25V14.5313H25.1875V9.68752C25.1909 9.56021 25.1667 9.43366 25.1165 9.3166C25.0664 9.19953 24.9914 9.09473 24.8969 9.0094L18.1156 2.22815C18.0303 2.13355 17.9255 2.05857 17.8085 2.0084C17.6914 1.95822 17.5648 1.93404 17.4375 1.93752H7.75C7.23661 1.93906 6.74469 2.14368 6.38167 2.5067C6.01865 2.86972 5.81403 3.36164 5.8125 3.87502V27.125C5.81403 27.6384 6.01865 28.1303 6.38167 28.4934C6.74469 28.8564 7.23661 29.061 7.75 29.0625H17.4375V27.125ZM17.4375 4.26252L22.8625 9.68752H17.4375V4.26252Z" fill="white"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-primary-to-secondary" id="contacto">
+            <div class="container px-5 text-center">
+                <h3 class="font-alt" style="font-family: 'Rubik', sans-serif;">¡Solicita tu juego!</h3>
+                <p class="lead fw-normal text-muted">Ingresa los datos requeridos y nos pondremos en contacto contigo para coordinar el envío del juego.</p>
+            </div>
+            <div class="container px-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 order-lg-0 mb-5 mb-lg-0">
+                        <div class="container-fluid">
+                            <div class="row gx-5">
+                                <div class="col-md-6 col-lg-6 mb-5">
+                                    <div class="form-floating">
+                                        <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre" required>
+                                        <label for="name">Nombre</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-5">
+                                    <div class="form-floating">
+                                        <input class="form-control" id="email" type="email" placeholder="Ingrese su correo" required>
+                                        <label for="email">Correo electrónico</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-5">
+                                    <div class="form-floating">
+                                        <div class="text-center">
+                                            <textarea class="form-control" id="comentarios" type="text" placeholder="Escríbenos para solicitar tu juego..." style="height: 10rem" required></textarea>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-5">
+                                    <div class="form-floating">
+                                        <div class="text-center">
+                                        <button id="enviar_formulario" class="btn btn-send py-3 px-4">ENVIAR
+                                        </button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-6 text-center">
+                        <a href="https://minuspain.cl/">
+                            <img src="assets/minus_pain.svg" alt="Minus Pain" width="300" />
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
+                        <a href="https://www.iniciativamilenio.cl/">
+                            <img src="assets/nucleo_milenio.svg" alt="Núcleo Mileno" width="300" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">Sitio desarrollado por</div>
+                    <a href="https://fef.cl/"><img src="assets/FEF-logo-png-white.png" alt="Logo FEF" width="200" /></a>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- Magnific Popup core JS file -->
+        <script src="js/jquery.magnific-popup.js"></script>
+
+        <script src="js/swiper.min.js"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper('.blog-slider', {
+              spaceBetween: 30,
+              effect: 'fade',
+              loop: false,
+              mousewheel: {
+                invert: false,
+              },
+              //autoHeight: true,
+              pagination: {
+                el: '.blog-slider__pagination',
+                clickable: true,
+              }
+            });
+            $(document).ready(function() {
+                $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+                    disableOn: 700,
+                    type: 'iframe',
+                    mainClass: 'mfp-fade',
+                    removalDelay: 160,
+                    preloader: false,
+
+                    fixedContentPos: false
+                });
+            });
+        </script>
+    </body>
+</html>
